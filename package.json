@@ -22,5 +22,8 @@
     "tslib": "^2.0.0",
     "typescript": "^4.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "mermaid": "^8.10.1"
+  }
 }

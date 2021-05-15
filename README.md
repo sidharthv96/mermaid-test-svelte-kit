@@ -1,38 +1,45 @@
-# create-svelte
+Steps
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
+```
+yarn
+yarn dev
 ```
 
-> Note: the `@next` is temporary
+Error
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+8:16:29 PM [vite] hmr update /src/routes/index.svelte
+8:16:30 PM [vite] Error when evaluating SSR module /Users/sidv/dev/mermaid-test-svelte-kit/src/routes/index.svelte:
+/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/entity-decode/browser.js:8
+export default function decode(html) {
+^^^^^^
 
-## Building
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.entity-decode/browser (/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/mermaid/dist/mermaid.core.js:28273:18)
+    at __webpack_require__ (/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/mermaid/dist/mermaid.core.js:30:30)
+    at Module../src/mermaid.js (/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/mermaid/dist/mermaid.core.js:24726:79)
+Unexpected token 'export'
+/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/entity-decode/browser.js:8
+export default function decode(html) {
+^^^^^^
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+SyntaxError: Unexpected token 'export'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.entity-decode/browser (/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/mermaid/dist/mermaid.core.js:28273:18)
+    at __webpack_require__ (/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/mermaid/dist/mermaid.core.js:30:30)
+    at Module../src/mermaid.js (/Users/sidv/dev/mermaid-test-svelte-kit/node_modules/mermaid/dist/mermaid.core.js:24726:79)
 
-```bash
-npm run build
 ```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
